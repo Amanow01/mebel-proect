@@ -1,0 +1,102 @@
+nav {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.right_nav {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  margin-left: auto;
+}
+.right_nav a {
+  font-family: cursive;
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  transition: color 700ms ease;
+  &:hover {
+    color: gold;
+  }
+}
+.myApp {
+  font-family: cursive;
+
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  transition: color 700ms ease;
+  &:hover {
+    color: gold;
+  }
+}
+.border-size {
+  width: 7rem;
+  margin-left: 0.75rem;
+}
+.border-size a {
+  font-size: 1rem;
+  color: #fff;
+}
+.menu {
+  display: none;
+}
+/* responsive */
+@media screen and (max-width: 850px) {
+  nav {
+    width: 100%;
+    border-bottom-left-radius: 15px #333;
+    background-color: rgb(179, 241, 116);
+  }
+  .right_nav {
+    column-gap: 0.5rem;
+  }
+  .myApp {
+    font-size: 1.5rem;
+  }
+  .myApp img {
+    width: 100%;
+  }
+  .border-size {
+    width: 7rem;
+    margin-left: 0.25rem;
+  }
+}
+@media screen and (max-width: 730px) {
+  .icon {
+    display: none;
+  }
+  .myApp img {
+    width: 100%;
+  }
+  .border-size {
+    width: 7rem;
+    margin-left: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .right_nav {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .right_nav a {
+    color: black;
+    font-size: 2rem;
+
+    &:hover {
+      color: red;
+    }
+  }
+  .menu {
+    display: block;
+  }
+}
