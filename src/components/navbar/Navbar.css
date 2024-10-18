@@ -1,18 +1,11 @@
 nav {
   width: 100%;
   padding: 1rem 0.5rem;
-  display: flex;
-  align-items: center;
 }
 
-.right_nav {
-  display: flex;
-  align-items: center;
-  column-gap: 2rem;
-  margin-left: auto;
-}
-.right_nav a {
+.link {
   font-family: cursive;
+  margin-left: 2rem;
   font-size: 1rem;
   font-weight: 600;
   color: black;
@@ -21,9 +14,19 @@ nav {
     color: gold;
   }
 }
-.myApp {
+input {
+  margin: 0 auto;
+  border-radius: 99999px;
+  padding: 0.25rem;
+  border: 1px solid #c7c3c3;
+}
+.speak-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
   font-family: cursive;
-
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -33,6 +36,9 @@ nav {
   &:hover {
     color: gold;
   }
+}
+.border-button {
+  border-bottom: 1px solid #c7c3c3;
 }
 .border-size {
   width: 7rem;
